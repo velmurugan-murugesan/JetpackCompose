@@ -96,12 +96,7 @@ fun ContentAccompanistLibPermission() {
     }
     Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.padding(12.dp)) {
         Button(onClick = {
-            permissionsState.permissions.all {
-                ContextCompat.checkSelfPermission(
-                    context,
-                    it.permission
-                ) == PackageManager.PERMISSION_GRANTED
-            }
+           
             if(permissionsState.permissions.all {
                     ContextCompat.checkSelfPermission(
                         context,
