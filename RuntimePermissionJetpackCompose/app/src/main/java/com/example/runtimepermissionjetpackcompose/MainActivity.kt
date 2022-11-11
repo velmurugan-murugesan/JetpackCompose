@@ -29,11 +29,18 @@ import com.example.runtimepermissionjetpackcompose.ui.theme.RuntimePermissionJet
 import com.google.accompanist.permissions.*
 import java.security.Permission
 import java.util.*
+import kotlin.collections.ArrayList
 
 class MainActivity : ComponentActivity() {
 
+    var a : kotlin.collections.ArrayList<String>? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
+        val srr: Array<String>? = intent.getStringArrayExtra("")
+        a = ArrayList(srr!!.toList())
         setContent {
             RuntimePermissionJetpackComposeTheme {
                 // A surface container using the 'background' color from the theme
