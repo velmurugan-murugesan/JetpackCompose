@@ -1,4 +1,4 @@
-package com.example.runtimepermissionjetpackcompose
+package com.example.observecurrentlocationjetpackcompose
 
 import org.junit.Test
 
@@ -13,19 +13,5 @@ class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
-    }
-
-    @Test
-    fun yearTest() {
-        val input = 1010
-        var a = input/ 100
-        println("a"+ a)
-        val b = input% 100
-        println("b"+ b)
-        if (b > 0) {
-            a += 1
-        }
-        println("result = " +a)
-
     }
 }
