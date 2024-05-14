@@ -7,6 +7,7 @@ import androidx.navigation.NavHost
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.example.jetpackcomposetesting.ui.features.createProduct.CreateProduct
 import com.example.jetpackcomposetesting.ui.features.home.HomeScreen
 import com.example.jetpackcomposetesting.ui.features.splash.SplashScreen
 
@@ -20,6 +21,10 @@ fun NavState(modifier: Modifier = Modifier, navController: NavHostController) {
 
         composable("home") {
             HomeScreen()
+        }
+
+        composable("createProduct") {
+            CreateProduct()
         }
 
 
